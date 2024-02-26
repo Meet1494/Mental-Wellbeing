@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zZz</title>
+    <link rel="stylesheet" href="sleep.css">
+    <script src="sleep.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="leftBar"><a href="dashboard.html">zZz</a></div>
+        <ul class="rightBar">
+            <li class="item"><a href="#clock">clock</a></li>
+            <li class="item"><a href="#tracker">tracker</a></li>
+            <li class="item"><a href="#tips">tips</a></li>
+        </ul>
+    </div>
+
+    <!-- hero -->
+     <div class="hero">
+        <img src="./resources1/Sleep Person.png" class="sleep-person-image" alt="Sleep Person Image">
+    </div>
+
+    <img src="./resources1/Moon.png" class="moon-image" alt="moon image">
+
+    <div class="floating-text">
+        <p>
+            Embark on a Dreamland Journey with our Sleep Tracker!
+        </p>
+    </div>
+
+
+    <!-- content -->
+    <div class="content" id="clock">
+        <div class="timeContainer">
+            <div class="clock">
+                <div class="hand hour" id="hour"></div>
+                <div class="hand minute" id="minute"></div>
+            </div>
+            <div class="displayTimeWraper" style="font-size: 30px;">
+                <h3>It is now: </h3>
+                <div class="displayTime"></div>
+                <div>
+                    <select>
+                        <option value="Hour" selected hidden>Hour</option>
+                    </select>
+                    <select>
+                        <option value="Minute" selected hidden>Minute</option>
+                    </select>
+                    <select>
+                        <option value="AM/PM" selected hidden>AM/PM</option>
+                    </select>
+                </div>
+                <button class="addButton">Add Alarm</button>
+            </div>
+
+        </div>
+        <div class="timeList"></div>
+    </div>
+
+    <!-- Tracker -->
+    <div class="tracker" id="tracker">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <label class="dataLabel">Sleep Tracker</label>
+        <div class="chart">
+            <canvas id="myChart" style="width:100%;max-width:400px"></canvas>
+            <canvas id="myChartStop" style="width:100%;max-width:400px"></canvas>
+            <canvas id="myChartLength" style="width:100%;max-width:400px"></canvas>
+        </div>
+    </div>
+
+<!-- Tips Main Content -->
+<div class="tips" id="tips">
+    <!-- Content related to Sleepathon can go here -->
+    <div class="tip">
+        <h2>Tips for Improving Your Sleep</h2>
+    </div>
+ 
+    <div class="tip">
+        <h3>Establish a Regular Sleep Schedule</h3>
+        <p>Try to go to bed and wake up at the same time every day, even on weekends. This helps regulate your body's clock and can help you fall asleep and stay asleep for the night.</p>
+    </div>
+    <div class="tip">
+        <h3>Pay Attention to What You Eat and Drink</h3>
+        <p>Don't go to bed either hungry or stuffed. Particularly, avoid heavy or large meals within a couple of hours of bedtime. Your discomfort might keep you up.</p>
+    </div>
+    <div class="tip">
+        <h3>Create a Restful Environment</h3>
+        <p>Create a room that's ideal for sleeping. Often, this means cool, dark, and quiet. Exposure to light might make it more challenging to fall asleep.</p>
+    </div>
+    <div class="tip">
+        <h3>Limit Daytime Naps</h3>
+        <p>Long daytime naps can interfere with nighttime sleep. If you choose to nap, limit yourself to up to 30 minutes and avoid doing so late in the day.</p>
+    </div>
+</div>
+
+</body>
+
+</html>

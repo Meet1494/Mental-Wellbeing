@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        background: rgb(217,127,247);
+        background:rgb(142,4,187);
+        background: radial-gradient(circle, rgba(142,4,187,1) 0%, rgba(11,0,11,0.9725140056022409)87%);
+        color:white ;
+    }
+
+    h2 {
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+    }
+
+    section {
+        padding: 20px;
+        margin: 30px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        gap: 3rem;
+        align-content: space-around;
+        justify-content: space-between;
+    }
+
+    .box{
+        margin: 23px;
+        padding: 23px;
+    }
+
+    .video{
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        gap: 3rem;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .vid{
+        margin: 2px;
+        padding: 23px;
+        position: relative;
+        left: 48px;
+    }
+
+    p{
+        text-align: center;
+        font-size: large;
+        font-family: "Open Sans", sans-serif;
+
+    }
+
+    footer{
+        text-align: center;
+    }
+    #goback-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #000000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .butt{
+        text-align: center;
+    }
+    
+</style>
+
+<body>
+    <section>
+        <h2>
+            Exercise plays a crucial role in managing anxiety and depression by promoting the release of endorphins,
+            improving sleep quality, reducing stress hormones, and enhancing overall well-being. Here are three
+            exercises known to be particularly effective:
+        </h2>
+
+    </section>
+    <div class="video">
+        <div class="vid">
+            <video  controls autoplay muted loop src="sports_.mp4" width="320" height="240">
+                <source src=”sports_.mp4” type=video/mp4>
+                <source src="sports_.ogg" type=video/ogg>
+                <source src=”sports_.WebM”>
+              </video>
+        </div>
+        <div class="vid">
+            <video  controls autoplay muted loop src="weightlifting.mp4" width="320" height="240"></video>
+                <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+                <source src="/build/videos/arcnet.io(7-sec).mp4" type=video/mp4>
+              </video>
+        </div>
+        <div class="vid">
+            <video  controls autoplay muted loop src="yoga.mp4" width="320" height="240"></video>
+                <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+                <source src="/build/videos/arcnet.io(7-sec).mp4" type=video/mp4>
+              </video>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="box">
+            <h2>Cardiovascular Exercises</h2>
+            <p>Activities such as jogging, swimming, cycling, or brisk walking elevate the heart rate and increase blood
+                flow to the brain, promoting the release of endorphins. These feel-good chemicals act as natural mood
+                lifters, reducing feelings of anxiety and depression. Aim for at least 30 minutes of moderate-intensity
+                aerobic exercise most days of the week.</p>
+        </div>
+        <div class="box">
+            <h2>Strength Training</h2>
+            <p>Resistance training, using weights, resistance bands, or body weight exercises, helps build muscle mass
+                and strength. Engaging in strength training exercises releases endorphins and boosts self-esteem and
+                confidence. Additionally, it can improve sleep quality and cognitive function. Aim for two to three sessions per week, targeting major muscle groups with
+                exercises like squats, lunges, push-ups, and deadlifts.</p>
+        </div>
+        <div class="box">
+            <h2>Mind-Body Exercises</h2>
+            <p> Practices such as yoga, tai chi, and qigong combine physical movement with mindfulness and deep
+                breathing techniques. These exercises not only enhance physical flexibility, balance, and strength but
+                also promote relaxation and stress reduction. Aim for at least 30 minutes of practice several times a week, focusing on deep breathing
+                and mindful movement.</p>
+        </div>
+    </div>
+    
+    <section>
+        <p>
+            Incorporating these exercises into your routine can significantly contribute to managing anxiety and depression, but it's essential to find activities that you enjoy and can sustain over time. Always consult with a healthcare professional before starting any new exercise regimen, especially if you have pre-existing health conditions or concerns.
+
+        </p>
+    </section>
+    <div class="butt">
+        <button id="goback-button" onclick="goback()">Back</button>
+
+    </div>
+
+    <hr>
+    <br>
+    <br>
+    <footer>
+        <p>For further queries call us at <i>9775624130</i></p>
+    </footer>
+    
+
+</body>
+<script>
+       function goback()
+    {
+      window.location.assign('dashboard.html');
+    }
+</script>
+</html>

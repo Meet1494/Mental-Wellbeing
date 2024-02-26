@@ -1,0 +1,161 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  /* font-family: "Fredoka One", cursive; */
+  color: #000000;
+  letter-spacing: 0.1em;
+}
+
+p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+}
+
+p span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+input {
+  margin-bottom: 3%;
+}
+
+input:last-of-type {
+  margin-bottom: 0;
+}
+
+input,
+button {
+  padding: 3%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.login-container {
+  background-color: white;
+  padding: 7%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* horizontal align */
+  width: 40vw;
+  margin-left: 30vw;
+  /* vertical align */
+  height: 70vh;
+  margin-top: 15vh;
+  position: relative;
+ }
+
+#submit,
+#create-acct-btn {
+  background-color:  #000000;
+  color: white;
+  border: none;
+  margin-top: 5%;
+}
+
+button:hover {
+  background-color: darkgray;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#sign-up {
+  border: none;
+  background-color:  #000000;
+  color: white;
+}
+
+#create-acct {
+  display: none;
+}
+
+#return-btn {
+  background: none;
+  color: grey;
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(217,127,247);
+  background: radial-gradient(circle, rgba(217,127,247,1) 4%, rgba(255,255,255,0.9725140056022409) 52%);
+
+  
+}
+
+
+
+
+
+.quote{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote h2{
+  text-align: centre;
+}
+
+
+.item{
+  height: 600px;
+  width: 600px;
+  background-color: #ffffff;
+  margin: 0px;
+}
+
+#partone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  /* overflow: hidden;
+  white-space: nowrap; */
+}
+
+#partone h2{
+  padding: 5px;
+  margin: 20px;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  /* display: inline-block;
+  padding-right: 20px;
+   */
+}
+
+/* #partone h2:first-child{
+  animation: partone 10s linear infinite;
+}
+
+@keyframes partone{
+  0% { transform: translate(100%, 0);}
+  100% { transform: translate(-100%, 0);}
+} */
+

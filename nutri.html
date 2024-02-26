@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Cards Grid Layout</title>
+    
+    <style>
+        body {
+            background: rgb(142, 4, 187);
+            background: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 650px);
+            grid-template-rows: repeat(2, 300px);
+            gap: 20px;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #010101;
+            font-size: 24px;
+            border-radius: 10px;
+            margin: 20px 20px;
+            box-shadow: 10px 10px 5px rgb(0, 0, 0);
+            padding: 5px 5px;
+        }
+
+
+        @keyframes rahil{
+            0%{
+                right: 70px;
+            }
+            100%{
+                right: 0px;
+            }
+        }
+
+        @keyframes rahil1{
+            0%{
+                left: 70px;
+            }
+            100%{
+                left: 0px;
+            }
+        }
+
+        #one {
+            background: url("leefy.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            animation-name: rahil;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+
+        #two {
+            background: url("berries.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            animation-name: rahil;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        #three {
+            background: url("nuts.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            animation-name: rahil1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+        #four {
+            background: url("choc.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            animation-name: rahil1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+        }
+
+
+
+
+        h4 {
+            background-color: transparent;
+            color: #fff;
+            display: inline;
+            padding: 10px;
+
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div id="one" class="card">
+            <h4>Leafy Greens</h4>
+            <p>Leafy greens such as spinach, kale, and Swiss chard are high in magnesium, which plays a role in
+                regulating neurotransmitters and promoting relaxation. Magnesium deficiency has been linked to increased
+                anxiety, so including magnesium-rich foods in your diet may help manage symptoms.</p>
+        </div>
+        <div id="two" class="card">
+            <h4>Berries</h4>
+            <p>Berries like blueberries, strawberries, and blackberries are packed with antioxidants, which can help
+                combat stress and inflammation in the body. They also contain vitamin C, which has been shown to reduce
+                stress hormone levels.</p>
+        </div>
+        <div id="three" class="card">
+            <h4>Nuts and Seeds</h4>
+            <p>Nuts and seeds like almonds, walnuts, and sunflower seeds are rich in healthy fats, protein, and
+                magnesium. They can help stabilize blood sugar levels and promote a sense of calmness.</p>
+        </div>
+        <div id="four" class="card">
+            <h4>Dark Chocolate</h4>
+            <p>Dark chocolate with high cocoa content (70% or higher) contains flavonoids that have been shown to reduce
+                stress hormones and improve mood. However, it's essential to consume dark chocolate in moderation due to
+                its calorie and sugar content.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Containers</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+  }
+
+  .grid-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 10px;
+    margin: 20px 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div id="one" class="grid-item">1</div>
+  <div id="two" class="grid-item">2</div>
+  <div id="three" class="grid-item">4</div>
+  <div id="four" class="grid-item">3</div>
+</div>
+
+</body>
+</html> -->

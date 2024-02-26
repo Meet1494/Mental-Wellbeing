@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Tracker</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: rgb(142,4,187);
+      background: radial-gradient(circle, rgba(142,4,187,1) 0%, rgba(11,0,11,0.9725140056022409)87%);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #mood-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #submit-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #000000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #goback-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #000000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #mood-container{
+      display: flex;
+      align-items: center;
+    }
+    .in{
+      text-align: center;
+    }
+    .butt{
+      text-align: center;
+      color: white;
+    }
+    h2{
+      color: white;
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+  <div id="mood-container">
+    <div id="mood-selector">
+      <h2>How are you feeling today?</h2>
+      <div class="in">
+        <select id="mood-dropdown">
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+          <option value="calm">Calm</option>
+          <option value="excited">Excited</option>
+          <option value="angry">Angry</option>
+        </select>
+
+      </div>
+      
+      
+    </div>
+  </div>
+  <br><br>
+
+  <div id="mood-container">
+    <div id="time-selector">
+      <h2>How much time did you spend with your family today?</h2>
+      <div class="in">
+        <input type="number" id="time-spent-input" placeholder="Enter minutes">
+      </div>
+      <br><br>
+      </div>
+  </div>
+  <br><br>
+
+  <div id="mood-container">
+    <div id="time-selector">
+      <h2>How much time did you exercise for today? (in minutes)</h2>
+      <div class="in">
+        <input type="number" id="exercise-input" placeholder="Enter minutes">
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="butt">
+    <button id="submit-button" onclick="trackMood()">Submit</button>
+    <br>
+    <button id="goback-button" onclick="goback()">Back</button>
+  </div>
+
+
+
+  <script>
+    function trackMood() {
+      const moodDropdown = document.getElementById('mood-dropdown');
+      const selectedMood = moodDropdown.value;
+
+      alert('Value Submitted !');
+      // Here you can perform further actions with the mood data, such as sending it to a server.
+    }
+
+    function goback()
+    {
+      window.location.assign('dashboard.html');
+    }
+  </script>
+
+</body>
+</html>
